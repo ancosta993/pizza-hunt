@@ -8,8 +8,8 @@ const CommentSchema = new Schema({
       type: String
    },
    createdAt: {
-      type:Data,
-      default: Data.now
+      type:Date,
+      default: Date.now
    }
 });
 
