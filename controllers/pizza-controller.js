@@ -12,7 +12,7 @@ const pizzaController = {
    },
 
    // get one pizza by id
-   getPizzabyId({ params }, res) {
+   getPizzaById({ params }, res) {
       Pizza.findOne({ _id:params.id })
          .then(dbPizzaData => {
             // if no pizza is found, send 404
@@ -36,7 +36,7 @@ const pizzaController = {
    },
 
    //update pizza by id
-   udpatePizza({params, body}, res){
+   updatePizza({params, body}, res){
       Pizza.findOneAndUpdate({ _id: params.id }, body, { new: true })
          .then(dbPizzaData => {
             if(!dbPizzaData) {

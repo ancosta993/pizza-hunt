@@ -5,7 +5,7 @@ const PizzaSchema = new Schema({
       type:String
    },
    createdBy: {
-      type: Date,
+      type:String
    },
    createdAt:{
       type: String,
